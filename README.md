@@ -153,7 +153,7 @@ save
 If you generated your key on one PC and you want to use on another
 ```sh
 # save on generator PC
-gpg --export-secret-keys 1A33B3EA2279CD97B9C10C42C7906F4CB7CC789F > sec.gpg
+gpg --export-secret-keys <fingerprint> > sec.gpg
 # move sec.gpg to new PC, and execute
 gpg --import sec.gpg
 ```
@@ -201,7 +201,7 @@ expire
 1y
 save
 
-gpg -a --export 1A33B3EA2279CD97B9C10C42C7906F4CB7CC789F > gpg.asc
+gpg -a --export <fingerprint> > gpg.asc
 ```
 
 publish `gpg.asc` content to websites and keyrings
