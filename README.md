@@ -2,7 +2,7 @@
 
 ## Communicate with key
 
-# Arch
+### Arch
 
 Execute
 ```sh
@@ -15,7 +15,7 @@ sudo systemctl enable pcscd
 pcsc_scan
 ```
 
-# Ubuntu
+### Ubuntu
 
 ```sh
 sudo apt-get install pcscd pcsc-tools scdaemon
