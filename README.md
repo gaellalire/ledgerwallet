@@ -2,6 +2,8 @@
 
 ## Communicate with key
 
+# Arch
+
 Execute
 ```sh
 sudo pacman -S pcsclite pcsc-tools ccid
@@ -12,6 +14,19 @@ sudo systemctl enable pcscd
 # you can verify the communication
 pcsc_scan
 ```
+
+# Ubuntu
+
+```sh
+sudo apt-get install pcscd pcsc-tools scdaemon
+
+sudo systemctl start pcscd
+sudo systemctl enable pcscd
+
+# you can verify the communication
+pcsc_scan
+```
+
 
 ## Configure gpg
 
