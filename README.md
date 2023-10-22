@@ -195,7 +195,9 @@ Of course your secondary keys private key are lost, you make them expired by cha
 
 Execute
 ```sh
-sudo pacman -S git python-pip swig
+sudo pacman -S git python-pip swig # archlinux
+sudo apt-get install git python3-pip libpcsclite-devel swig # ubuntu
+
 pip install --user pyscard
 git clone https://github.com/LedgerHQ/ledger-app-openpgp-card.git
 cd ledger-app-openpgp-card/pytools
